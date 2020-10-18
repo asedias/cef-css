@@ -42,7 +42,7 @@ body {
     font-style: bold;
     font-weight: 700;
     font-stretch: ultra-expanded;
-	src: url("C:/Users/Romq/Downloads/react/react_app/fonts/stratum2cyrbold.ttf") format("truetype");
+	src: url("./fonts/stratum2cyrbold.ttf") format("truetype");
 }
 
 @font-face {
@@ -50,7 +50,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-stretch: ultra-expanded;
-	src: url("C:/Users/Romq/Downloads/react/react_app/fonts/stratum2cyrregular.ttf") format("truetype");
+	src: url("./fonts/stratum2cyrregular.ttf") format("truetype");
 }
 
 #video {
