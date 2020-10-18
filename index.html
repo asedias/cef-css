@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>CSS Test Menu</title>
+		
+		<link rel="preload" href="fonts/stratum2cyrbold.ttf" as="font" type="font/ttf">
+		<link rel="preload" href="fonts/stratum2cyrregular.ttf" as="font" type="font/ttf">
+  
+		<link type="text/css" rel="stylesheet" href="styles/index.css">
+		<link type="text/css" rel="stylesheet" href="styles/panel.css">
+		<link type="text/css" rel="stylesheet" href="styles/dialog.css">
+		<link type="text/css" rel="stylesheet" href="styles/news.css">
+		<script src="react/react.development.js"></script>
+		<script src="react/react-dom.development.js"></script>
+	</head>
+	<body>
+		<!-- Video Background -->
+		<video autoplay muted loop id="video">
+			<source src="videos/nuke.webm" type="video/mp4">
+		</video>
+		<!-- Root -->
+		<div id="root"style="display: -webkit-box;">
+			<!-- Left Panel -->
+			<aside class="Panel">
+				<div style="width: 11vh;height: 8vh;" class="Panel_Logo">CSS</div>
+				<div class="Panel_Divider"></div>
+				<PanelButton id="play" onmouseenter="tick()" onclick="showSimpDialog()"></PanelButton>
+				<PanelButton id="search" onmouseenter="tick()"></PanelButton>
+				<PanelButton id="account" onmouseenter="tick()"></PanelButton>
+				<PanelButton id="settings" onmouseenter="tick()"></PanelButton>
+				<div class="Panel_Divider"></div>
+				<PanelButton id="exit" onmouseenter="tick()" ></PanelButton>
+			</aside>
+			<!-- News Panel -->
+			<aside class="News">
+				<div class="News_Logo">Новости</div>
+				<input id="fr" src="news.json" <!--style="display:none" --></input>
+			</aside>
+		</div>
+		
+		<!-- Popup Dialog -->
+		<PopupDialog id="dialog"></PopupDialog>
+		
+		<!-- Load our React component. -->
+		<script src="components/PanelButton.js"></script>
+		<script src="components/PopupDialog.js"></script>
+		<script src="main.js"></script>
+		
+	</body>
+</html>

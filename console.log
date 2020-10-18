@@ -1,0 +1,6 @@
+Level: Info
+Message: %cDownload the React DevTools for a better development experience: https://fb.me/react-devtools
+You might need to use a local HTTP server (instead of file://): https://fb.me/react-devtools-faq font-weight:bold
+Source: file:///C:/Users/Romq/Downloads/react/csgo_like/react/react-dom.development.js
+Line: 25129
+-----------------------

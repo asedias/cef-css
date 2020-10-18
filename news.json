@@ -1,0 +1,76 @@
+// 20201018105625
+// https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=240&count=5&maxlength=300&format=json
+
+{
+  "appnews": {
+    "appid": 240,
+    "newsitems": [
+      {
+        "gid": "3112493747266731814",
+        "title": "Who made fy_iceworld? A forensic investigation",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/rps/3112493747266731814",
+        "is_external_url": true,
+        "author": "contact@rockpapershotgun.com (Robert Yang)",
+        "contents": "<a href=\"https://assets.rockpapershotgun.com/images/2020/04/yang_fy_iceworld_header.jpg\"> </a> I frequent a <a href=\"https://www.rockpapershotgun.com/game/counter-strike/\">Counter-Strike</a> level design forum called Mapcore. There, a Dutch teenager who goes by &ldquo;RD&rdquo; (&ldquo;RealDespair&rdquo;) has long claimed to have been the original author of fy_iceworld. His now defunct portfolio site went on a lengthy rant about it: &ldquo;Yes, you read it ...",
+        "feedlabel": "Rock, Paper, Shotgun",
+        "date": 1587643216,
+        "feedname": "rps",
+        "feed_type": 0,
+        "appid": 10
+      },
+      {
+        "gid": "3112493747263128833",
+        "title": "The legacy of fy_iceworld, Counter-Strike's divisive and hugely popular custom map",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/rps/3112493747263128833",
+        "is_external_url": true,
+        "author": "contact@rockpapershotgun.com (Robert Yang)",
+        "contents": "<a href=\"https://assets.rockpapershotgun.com/images/2020/04/yang_fy_iceworld01-guns.jpg\"> </a> I remember playing a <a href=\"https://www.rockpapershotgun.com/game/counter-strike/\">Counter-Strike</a> map in 2001 called fy_iceworld. It was a small simple grey killbox of a map that virtually anyone could&rsquo;ve made within the first few hours of downloading the editor tools. fy_iceworld quickly became one of the most popular and divisive CS maps at my school...",
+        "feedlabel": "Rock, Paper, Shotgun",
+        "date": 1587556805,
+        "feedname": "rps",
+        "feed_type": 0,
+        "appid": 10
+      },
+      {
+        "gid": "2426802221738268626",
+        "title": "Update Released for Counter-Strike: Source, Day of Defeat: Source, Half-Life Deathmatch: Source, Half-Life 2: Deathmatch, and the Source SDK 2013 Base",
+        "url": "https://store.steampowered.com/news/54979/",
+        "is_external_url": false,
+        "author": "Valve",
+        "contents": "Updates for Counter-Strike: Source, Day of Defeat: Source, Half-Life Deathmatch: Source, Half-Life 2: Deathmatch, and the Source SDK 2013 Base have been released. The updates will be applied automatically when you restart the game. The major changes include: * Various stability and security updates; ...",
+        "feedlabel": "Product Update",
+        "date": 1570572540,
+        "feedname": "steam_updates",
+        "feed_type": 0,
+        "appid": 240
+      },
+      {
+        "gid": "2413284533092166221",
+        "title": "Dustnet is a strange and wonderful dream of the last de_dust2 server",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/rps/2413284533092166221",
+        "is_external_url": true,
+        "author": "contact@rockpapershotgun.com (Alice O'Connor)",
+        "contents": "<a href=\"https://assets.rockpapershotgun.com/images/2019/07/987290_20190718112018_1.png\"> </a> Were Plato alive today, he&#8217;d declare a sixth platonic solid: de_dust2, representing the sixth element of devotion. This sacred configuration of geometry escaped its confinement in Counter-Strike and for eighteen years the map has lived in the hearts of men, re-emerging in dreams, in other ga...",
+        "feedlabel": "Rock, Paper, Shotgun",
+        "date": 1563451065,
+        "feedname": "rps",
+        "feed_type": 0,
+        "appid": 240
+      },
+      {
+        "gid": "3702426087241404276",
+        "title": "The unlikely origin of Counter-Strike surfing",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/eurogamer/3702426087241404276",
+        "is_external_url": true,
+        "author": "",
+        "contents": "In my younger and more vulnerable years, I spent a lot of time getting shot in the head in Counter-Strike: Source. While there were many factors working against me - my age, my characteristic lack of dexterity, my (for the time) toaster-level PC, and my bargain-bin 200 DPI Dell laser mouse - I never...",
+        "feedlabel": "Eurogamer",
+        "date": 1550232000,
+        "feedname": "eurogamer",
+        "feed_type": 0,
+        "appid": 10
+      }
+    ],
+    "count": 188
+  }
+}
