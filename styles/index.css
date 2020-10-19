@@ -13,8 +13,11 @@
 	--white_alpha40:hsla(0,0%,100%,0.40);
 }
 
+/* 0.1px = 0.13vh FONTS */
+
 body {
-	background-image: url(../images/bg.jpeg);
+	/*background-image: url(../images/bg.jpeg);*/
+	background-image: url(../images/20201019190727_1.jpg);
 	background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

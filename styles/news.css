@@ -42,6 +42,7 @@
     width: 500px;
 	position: relative;
 	backdrop-filter: blur(25px);
+	display: none;
 }
 
 .News_Logo {

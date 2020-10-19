@@ -36,11 +36,17 @@
 	src: url("../fonts/stratum2cyrregular.ttf") format("truetype");
 }
 .Panel {
-	width: 11vh;
+	width: 8.7vh;
     height: 100vh;
     background-color: #99a2ad52;
     position: relative;
-	backdrop-filter: blur(25px);
+	backdrop-filter: blur(32.5vh);
+}
+
+PanelButton img {
+    width: 6.7vh;
+    height: 7vh;
+    padding: 1vh;
 }
 
 PanelButton:hover img {
@@ -53,13 +59,13 @@ PanelButton:hover img {
 
 .Panel_Logo {
 	font-family: "VK Sans Display";
-    font-size: 2.5vh;
+    font-size: 2vh;
     font-weight: 700;
     line-height: 8vh;
-    letter-spacing: .26px;
+    letter-spacing: .338vh;
     color: var(--white);
     -webkit-font-smoothing: antialiased;
-    margin-left: 3vh;
+    text-align-last: center;
 }
 
 #exit {

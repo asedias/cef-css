@@ -58,6 +58,9 @@ class PopupDialog extends React.Component {
 			onMouseEnter: eval(this.props.tickFunc),
             onClick: eval(this.props.confirmFunc),
 			className: this.props.type,
+			style: {
+				display: this.props.confirmText.length > 0 ? "block" : "none",
+			},
           },
           this.props.confirmText
         ),
@@ -68,6 +71,9 @@ class PopupDialog extends React.Component {
             onMouseEnter: eval(this.props.tickFunc),
             onClick: eval(this.props.cancelFunc),
 			className: this.props.type,
+			style: {
+				display: this.props.cancelText.length > 0 ? "block" : "none",
+			},
           },
           this.props.cancelText
         )
