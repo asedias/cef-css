@@ -27,11 +27,35 @@ function alert() {
 	console.log("mouseover");
 }
 
-function showSimpDialog() {
-	showDialog("This is a Title!", 'Sub', 'OK', 'Cancel');
+function showVACDialog() {
+	showDialog("Disconnected", 
+	"You cannot play on secure servers for one of the following reasons:" 
+	+ "\n\n• An issue with your computer is blocking the VAC system."
+    + "\n• You are unable to maintain a stable connection to the VAC system."
+	+ "\n• You are running software that is modifying the game or is incompatible with VAC."
+
+	+ "\n\nFor more information visit:"
+
+	+ "\nhttps://support.steampowered.com/kb_article.php?ref=2117-ILZV-2837", "", "OK", 'default');
 }
 
-function showDialog(title, desc, ok, cancel) {
+function showOWDialog() {
+	showDialog("Player Reports", 
+		"One or more players that you recently reported were convicted and permanently banned from official CS:GO servers. Thank you for helping the CS:GO community.",
+		"", "Confirm", 'blue');
+}
+
+function showCDDialog() {
+	showDialog("Competitive Cooldown Expired",
+		"Your cooldown has expired. Subsequent cooldowns may be longer. \nCooldown Reason: You killed a teammate at round start",
+		"", "Confirm", 'yellow');
+}
+
+function showSimpDialog() {
+	showDialog("This is a Title!", 'Sub', 'OK', 'Cancel', 'default');
+}
+
+function showDialog(title, desc, ok, cancel, type) {
 	document.querySelectorAll("PopupDialog").forEach((domContainer) => {
 		ReactDOM.render(
 			/*#__PURE__*/ React.createElement(PopupDialog, {
@@ -41,7 +65,8 @@ function showDialog(title, desc, ok, cancel) {
 				cancelFunc: 'hideDialog',
 				confirmText: ok.toString(),
 				cancelText: cancel.toString(),
-				tickFunc: 'tick'
+				tickFunc: 'tick',
+				type: type.toString(),
 			}),
 			domContainer
 		);

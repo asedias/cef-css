@@ -11,8 +11,21 @@
 	--white_alpha80:hsla(0,0%,100%,0.80);
 	--white_alpha60:hsla(0,0%,100%,0.60);
 	--white_alpha40:hsla(0,0%,100%,0.40);
-	--dialog-main:#4a4a4a;
-	--dialog-alpha:#0000005c;
+	
+	--dialog-main:#2B2B2B;
+	--dialog-alpha:#00000080;
+	--dialog-title:#A0A0A0;
+	--dialog-title-bg:#252525;
+	--dialog-border:#4a4a4a;
+	--dialog-button:#FFF;
+	
+	--dialog2-title-bg:#417CA8;
+	--dialog2-title:#000000;
+	--dialog2-button:#4f6e86;
+	
+	--dialog3-title-bg:#E1C212;
+	--dialog3-title:#000000;
+	--dialog3-button:#b39a10;
 }
 
 @font-face {
@@ -51,7 +64,8 @@
 }
 
 #dialog-frame {
-    width: 70vh;
+    min-width: 70vh;
+    max-width: 72.8vh;
     min-height: 25vh;
     background-color: var(--dialog-main);
     margin-left: auto;
@@ -59,8 +73,8 @@
 	-webkit-box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75);
-    border-radius: 0.5vh;
-    position: relative;
+    position: relative; 
+    border: 0.1vh solid var(--dialog-border);
 }
 
 #dialog-title {
@@ -68,14 +82,26 @@
     font-size: 2.2vh;
     font-weight: 400;
     letter-spacing: 1.5px;
-    color: var(--white);
+    color: var(--dialog-title);
     -webkit-font-smoothing: antialiased;
-    background: #00000024;
+    background: var(--dialog-title-bg);
     padding-top: 2.1vh;
     padding-bottom: 2.1vh;
     padding-left: 3.4vh;
     padding-right: 3.4vh;
-    -webkit-text-stroke: 0.04vh white;
+    -webkit-text-stroke: 0.12vh var(--dialog-title);
+}
+
+#dialog-title.blue {
+    color: var(--dialog2-title);
+    background: var(--dialog2-title-bg);
+    -webkit-text-stroke: 0.12vh var(--dialog2-title);
+}
+
+#dialog-title.yellow {
+    color: var(--dialog3-title);
+    background: var(--dialog3-title-bg);
+    -webkit-text-stroke: 0.12vh var(--dialog3-title);
 }
 
 #dialog-description {
@@ -89,6 +115,8 @@
     padding-bottom: 2.1vh;
     padding-left: 3.4vh;
     padding-right: 3.4vh;
+    white-space: pre-wrap;
+    margin-bottom: 8vh;
 }
 
 #dialog-buttons {
@@ -109,14 +137,27 @@
     font-size: 1.7vh;
     font-weight: 400;
     letter-spacing: 1.5px;
-    color: var(--white);
+    color: var(--dialog-button);
     -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke: 0.04vh white;
+    -webkit-text-stroke: 0.12vh var(--dialog-button);
     padding: 1.8vh;
     right: 0;
 	margin-left: 1vh;
+	text-transform: uppercase;
 }
+
 #button1:hover, #button2:hover {
 	background: #00000024;
     border-radius: 0.5vh;
+}
+
+#button1.blue, #button2.blue {
+    -webkit-text-stroke: 0.12vh var(--dialog2-button);
+    color: var(--dialog2-button);
+}
+
+
+#button1.yellow, #button2.yellow {
+    -webkit-text-stroke: 0.12vh var(--dialog3-button);
+    color: var(--dialog3-button);
 }

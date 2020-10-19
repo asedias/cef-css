@@ -33,7 +33,9 @@ class PopupDialog extends React.Component {
       /*#__PURE__*/ React.createElement(
         "div",
         {
-          id: "dialog-title"
+		
+          id: "dialog-title",
+		  className: this.props.type,
         },
         this.props.titleText
       ),
@@ -55,6 +57,7 @@ class PopupDialog extends React.Component {
             id: "button1",
 			onMouseEnter: eval(this.props.tickFunc),
             onClick: eval(this.props.confirmFunc),
+			className: this.props.type,
           },
           this.props.confirmText
         ),
@@ -63,7 +66,8 @@ class PopupDialog extends React.Component {
           {
             id: "button2",
             onMouseEnter: eval(this.props.tickFunc),
-            onClick: eval(this.props.cancelFunc)
+            onClick: eval(this.props.cancelFunc),
+			className: this.props.type,
           },
           this.props.cancelText
         )

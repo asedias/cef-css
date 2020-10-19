@@ -11,8 +11,6 @@
 	--white_alpha80:hsla(0,0%,100%,0.80);
 	--white_alpha60:hsla(0,0%,100%,0.60);
 	--white_alpha40:hsla(0,0%,100%,0.40);
-	--dialog-main:#4a4a4a;
-	--dialog-alpha:#0000005c;
 }
 
 @font-face {
